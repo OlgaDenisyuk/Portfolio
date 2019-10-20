@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="portfolio_wrapper">
+        <header class="header">
+            <h1>Portfolio</h1>
+            <img src="./assests/img/Olga.jpg" alt="My photo" class="header__my-photo">
+            <div class="header__about-block">
+                <h2 class="header__block-name">Olga Denisyuk</h2>
+                <a href="https://www.facebook.com/people/Denisyuk-Olga/100004445674260" target="_blank">GitHub</a>
+                <a href="https://t.me/IgorevnaOlga" target="_blank">Telegram</a>
+                <a href="mailto:denisykolga@gmail.com" target="_blank">Gmail</a>
+            </div>
+        </header>
+
+
+
+        <section class="education_block">
+            <div class="education_block__nav">
+                <p class="education_block__text">Education</p>
+                <p class="education_block__arrow">&uarr;</p>
+            </div>
+            <div class="education_block__content hide">
+                <ul class="education_block__list">
+                    <li class="education_block__list-item">School: 1988-2001</li>
+                    <li class="education_block__list-item">University: 2001-2006</li>
+                    <li class="education_block__list-item">RSSchool Courses: 2019-2020</li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <div class="swiper">
+            <h2 class="swiper-title">Projects</h2>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper_slide">
+                    <div class="swiper_slide-about hide-description swiper_slide-about_first">
+                        <h2 class="swiper_slide-title">theyalow</h2>
+                        <ul class="swiper_slide-list">
+                            <li class="swiper_slide-item">the project should be close to the source file</li>
+                            <li class="swiper_slide-item">care about the interactivity of elements, backgrounds and colors</li>
+                            <li class="swiper_slide-item">use .psd files for the project and apps for them</li>
+                        </ul>
+                        <div class="swiper_slide-click">
+                            <p class="swiper_slide-click_text">Click on image to see the project</p>
+                            <img src="assets/arrow-right-big.svg" alt="arrow right" class="swiper_slide-click_img">
+                        </div>
+                    </div>
+                    <div class="swiper_slide-image swiper_slide-image_first" onClick="window.location='projects/theyalow/index.html'">
+                      <div class="swiper_slide-image_click">
+                        <p class="swiper_slide-image_click_text">show desc</p>
+                        <button type="button" name="button" class="swiper_slide-image_click_dot first_dot"></button>
+                      </div>
+                      <p class="swiper_slide-image_swipe_text">swipe to see other</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper_slide">
+                    <div class="swiper_slide-about hide-description swiper_slide-about_second">
+                        <h2 class="swiper_slide-title">repair-design-project</h2>
+                        <ul class="swiper_slide-list">
+                            <li class="swiper_slide-item">the project should be responsive</li>
+                            <li class="swiper_slide-item">care about the interactivity of elements</li>
+                            <li class="swiper_slide-item">use validation on not empty input fields with correct type</li>
+                        </ul>
+                        <div class="swiper_slide-click">
+                            <p class="swiper_slide-click_text">Click on image to see the project</p>
+                            <img src="assets/arrow-right-big.svg" alt="arrow right" class="swiper_slide-click_img">
+                        </div>
+                    </div>
+                    <div class="swiper_slide-image swiper_slide-image_second">
+                        <div class="swiper_slide-image_click">
+                          <p class="swiper_slide-image_click_text">show desc</p>
+                          <button type="button" name="button" class="swiper_slide-image_click_dot second_dot"></button>
+                        </div>
+                        <p class="swiper_slide-image_swipe_text">swipe to see other</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="swiper.js"></script>
+
+</body>
+
+</html>
