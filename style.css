@@ -261,6 +261,19 @@ header h1 {
   }
 }
 @media (max-width:640px){
+  header{
+    padding:0 10px;
+  }
+  .header__block-name {
+    font-size: 1.5em;
+  }
+  .header__about-block a {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.header__my-photo {
+  margin-right: 20px;
+}
   .arrow{
     display: none;
   }
