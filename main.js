@@ -1,7 +1,42 @@
  
+ let educationBlock = document.querySelector('.education_block__content');
  let items = document.querySelectorAll('.item');
+ let rdpDesc = document.getElementById('rdp-desc');
+ let theylowDesc = document.getElementById('theylow-desc');
  let currentItem = 0;
  let isInable = true;
+
+
+ document.querySelector('.education_block__nav').addEventListener('click', function() {
+   if (educationBlock.style.display != "block") { 
+      educationBlock.style.display = "block";
+      this.classList.add('show');
+  }
+  else {
+     educationBlock.style.display = "none"; 
+     this.classList.remove('show');
+}
+})
+
+document.getElementById('show-rdp').addEventListener('click', function(){
+   if(rdpDesc.classList.contains('show-desc')){
+      rdpDesc.classList.remove('show-desc');
+   }
+   else{
+      rdpDesc.classList.add('show-desc');
+   }
+}
+)
+document.getElementById('show-theylow').addEventListener('click', function(){
+   if(theylowDesc.classList.contains('show-desc')){
+      theylowDesc.classList.remove('show-desc');
+   }
+   else{
+      theylowDesc.classList.add('show-desc');
+   }
+}
+)
+
 
  function changeCurrentItem(n) {
      currentItem = (n + items.length) % items.length;

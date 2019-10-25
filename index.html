@@ -22,51 +22,70 @@
                 <a href="mailto:denisykolga@gmail.com" target="_blank">Gmail</a>
             </div>
         </header>
-        <section id="panel" class="education_block">
+        <section class="education_block">
             <div class="education_block__nav">
                 <p class="education_block__text">Education</p>
-                <p class="education_block__arrow">&uarr;</p>
+                <p class="education_block__arrow">&lt;</p>
             </div>
-            <div id="show" class="education_block__content hide">
+            <div class="education_block__content hide">
                 <ul class="education_block__list">
-                    <li class="education_block__list-item">School: 1988-2001</li>
-                    <li class="education_block__list-item">University: 2001-2006</li>
-                    <li class="education_block__list-item">RSSchool Courses: 2019-2020</li>
+                    <li class="education_block__list-item"><strong>School</strong><br> 1988-2001</li>
+                    <li class="education_block__list-item"><strong>University</strong><br> 2001-2006</li>
+                    <li class="education_block__list-item"><strong>RSSchool Courses</strong><br> 2019-2020</li>
                 </ul>
             </div>
         </section>
+        <section class="projects_block">
+                <div class="projects_block__nav">
+                    <p class="projects_block__text">Projects</p>
+                </div>
         <!-- Carousel -->
-        <div class="carousel-container">
-        <div class="carousel">
-            <div class="item-container">
-                <div class="item active">
-                    <div class="description">
-                        <div class="project-name">Theyalow</div>
-                            <img src="./assests/img/theyalow_desc.jpg" alt="Theyalow">
+            <div class="carousel-container">
+            <div class="carousel">
+                <div class="item-container">
+                    <div class="item active">
+                        <div class="description">
+                            <span id="show-theylow" class="btn"></span>
+                            <div id="theylow-desc" class="project-name">
+                                <h3>Theyalow</h3>
+                                <ul>
+                                    <li>Pixel Perfect extension</li>
+                                    <li>Photopea vs Photoshop</li>
+                                    <li>svg</li>
+                                </ul>
+                            </div>
+                                <a href="./projects/index1.html" target="_blank"><img src="./assests/img/theyalow_desc.jpg" alt="Theyalow">
+                                </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="description">
+                            <span id="show-rdp" class="btn"></span>
+                            <div id="rdp-desc" class="project-name">
+                                <h3>Repair Design Project</h3>
+                                <ul>
+                                    <li>Responsive</li>
+                                    <li>Figma</li>
+                                    <li>Sass</li>
+                                </ul>
+                                </div>
+                                <a href="./projects/index.html" target="_blank"><img src="./assests/img/repair_desc.jpg" alt="Repair Design Project">
+                                </a>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="description">
-                        <div class="project-name">Repair Design Project</div>
-                            <img src="./assests/img/repair_desc.jpg" alt="Repair Design Project">
-                    </div>
+                <div class="control left">
+                    <div class="arrow left">&lt;</div>
                 </div>
-            </div>
-            <div class="control left">
-                <div class="arrow left">&lt;</div>
-            </div>
-            <div class="control right">
-                <div class="arrow right">&gt;</div>
+                <div class="control right">
+                    <div class="arrow right">&gt;</div>
+                </div>
             </div>
         </div>
-    </div>
         <!-- End of Carousel -->
-    </div>
-
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    </section>
+</div>
     <script src="main.js"></script>
-    <script src="swiper.js"></script>
-
 </body>
 
 </html>
